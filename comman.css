@@ -1,0 +1,476 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.navbar {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4vw;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 2.5vw;
+}
+
+.nav-links h4 {
+  font-size: 1.1vw;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+}
+
+
+.nav-links a:hover {
+  color: #000;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 2px;
+  background-color: #333;
+}
+
+/* common slide-bar styling */
+
+.slide-bar {
+  padding-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.slide-bar h2 {
+  font-size: 2vw;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+
+.slide-bar .heading {
+  background-color: rgb(221, 214, 214);
+  padding: .2vw 0;
+  border-radius: 5px;
+}
+
+
+/* hero page styling */
+
+.hero {
+  display: flex;
+  padding: 100px 50px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+}
+
+.hero span {
+  color: rgb(86, 86, 126);
+}
+
+.hero .right {
+  flex: 1 1 400px;
+}
+
+.hero .right h2 {
+  font-size: 3vw;
+  margin-bottom: 1.5vw;
+}
+
+.hero .right p {
+  font-size: 1.2vw;
+  color: #444;
+}
+
+.hero .left {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.hero .left img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.course {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.courseContainer {
+  padding-top: 4vw;
+  display: flex;
+  gap: 2vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.course-card {
+  width: 350px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 1.5vw;
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.course-card h3 {
+  margin: 1vw 0 0.5vw;
+  font-size: 1.3vw;
+}
+
+.course-card p {
+  font-size: 1vw;
+  color: #555;
+}
+
+
+
+/* 9th & 10th Lecture Styling */
+
+
+.name {
+  padding-top: 30px;
+}
+
+.lecture {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.lecture-content {
+  padding-top: 4vw;
+  display: flex;
+  gap: 2vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.lecture-card {
+  width: 300px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 1.5vw;
+  transition: transform 0.3s ease;
+}
+
+.lecture-card:hover {
+  transform: translateY(-5px);
+}
+
+.lecture-card iframe {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.lecture-card h3 {
+  margin: 1vw 0 0.5vw;
+  font-size: 1.3vw;
+}
+
+.lecture-card span {
+  color: blue;
+}
+
+
+.lecture-card p {
+  font-size: 1vw;
+  color: #555;
+}
+
+
+/* 9th & 10th notes page styling */
+
+
+.notes {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.notes-content {
+  text-align: start;
+  padding-top: 4vw;
+  gap: 2vw;
+  justify-content: center;
+}
+
+.notes-card {
+  margin-top: 1vw;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 1.5vw;
+  transition: transform 0.3s ease;
+}
+
+.notes-card h3 {
+  font-size: 1.5vw;
+}
+
+
+/* contact page styling */
+
+
+.contact {
+  margin-top: 8vw;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 90px;
+
+}
+
+.contact-container {
+  margin-top: 60px;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+.contact-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.contact-container label {
+  display: block;
+  margin-bottom: 6px;
+  color: #555;
+  font-weight: 600;
+}
+
+.contact-container input,
+.contact-container textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  resize: vertical;
+}
+
+.contact-container textarea {
+  min-height: 100px;
+}
+
+.contact-container button {
+  width: 100%;
+  background-color: gray;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-container button:hover {
+  background-color: #181717;
+}
+
+/* footer */
+
+footer {
+  border-top: 1px solid gray;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 0;
+  background-color: #fff;
+}
+
+
+/* Responsive */
+@media (max-width: 500px) {
+  .navbar h1 {
+    font-size: 5vw;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vw;
+    padding: 2vw 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links h4 {
+    font-size: 4vw;
+  }
+
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* slide bar */
+
+  .slide-bar {
+    padding-top: 120px;
+  }
+
+
+
+  /* hero page styling */
+
+
+  .hero .right h2 {
+    font-size: 6vw;
+  }
+
+  .hero .right p {
+    font-size: 3.5vw;
+  }
+
+  .left img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .course h1 {
+    font-size: 6vw;
+  }
+
+  .course-card {
+    margin-top: 5vw;
+    width: 280px;
+
+  }
+
+  .course-card h3 {
+    font-size: 4vw;
+  }
+
+  .course-card p {
+    font-size: 3.2vw;
+  }
+
+  /* 9th & 10th Lecture Styling */
+
+
+  .name {
+    padding-top: 30px;
+    font-size: 3vw;
+  }
+
+  .lecture-card {
+    width: 300px;
+    height: 230px;
+  }
+
+  .lecture-card iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
+
+  .lecture-card h3 {
+    font-size: 4vw;
+  }
+
+  .lecture-card p {
+    font-size: 2.5vw;
+    font-weight: bold;
+  }
+
+  .lecture-card span {
+    color: rgb(72, 72, 221);
+  }
+
+
+  /* 9th & 10th notes Styling */
+
+  .slide-bar h2 {
+    font-size: 4vw;
+  }
+
+  h3 {
+    font-size: 2.5vw;
+  }
+
+  .notes-card {
+    margin-top: 2vw;
+  }
+
+  .notes-card h3 {
+
+    font-size: 4vw;
+    padding: 3vw;
+
+  }
+
+  /* about page */
+  header h1 {
+    font-size: 5vw;
+  }
+
+  .about h2 {
+    font-size: 4vw;
+  }
+
+  .about p {
+    font-size: 3vw;
+  }
+
+
+
+}
